@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="./index.css">
+  <script src="https://kit.fontawesome.com/e29e860917.js" crossorigin="anonymous"></script>
+  <title>Ray的公民教室</title>
+</head>
+
+<body>
+  <header class="header">
+    <nav class="navbar">
+      <a id="nav-logo">RAY的公民教室</a>
+      <ul class="nav-menu" style="margin: 0; padding: 0; list-style-type: none;">
+        <li class="nav-item">
+          <a href="#slideshows" class="nav-link">教學影片</a>
+        </li>
+        <li class="nav-item">
+          <a href="#handouts" class="nav-link">講義下載</a>
+        </li>
+        <li class="nav-item">
+          <a href="./quiz.html" class="nav-link">模擬測驗</a>
+        </li>
+      </ul>
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </nav>
+  </header>
+
+  <div class="container intro-container" style="margin-top: 5rem;">
+    <img src="./icons/rc4-logo.png" alt="" id="rc-logo">
+    <h1 class="mt-5">為華人設計的公民教室</h1>
+    <h5 class="subtitle mt-3">以下是教學系列總覽，點擊即可前往頻道上的播放清單</h5>
+  </div>
+
+  <div class="container mt-5">
+    <div class="row" id="playlist-container">
+      <!-- Playlists Go Here -->
+    </div>
+  </div>
+
+  <div class="container" style="margin-top: 10rem;">
+    <h1 style="text-align: center;">最新影片</h1>
+  </div>
+
+  <div class="container mt-5">
+    <div class="row" id="new-videos-container">
+      <!-- New Videos Go Here -->
+    </div>
+  </div>
+
+  <div class="container" id="slideshows" style="margin-top: 10rem;">
+    <h1 style="text-align: center;">所有影片</h1>
+  </div>
+
+  <div class="container mt-5">
+    <div class="row" id="slideshows-container">
+      <!-- Slideshows Go Here -->
+    </div>
+  </div>
+
+  <div class="container" id="handouts" style="margin-top: 10rem;">
+    <h1 style="text-align: center;">講義下載</h1>
+  </div>
+
+  <div class="container mt-5">
+    <div class="row" id="handouts-container">
+      <!-- Handouts Go Here -->
+    </div>
+  </div>
+
+  <footer class="text-white text-center text-lg-start" style="margin-top: 5rem;">
+    <div class="container p-4">
+      <div class="row">
+        <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+          <h5 class="text-uppercase">RAY的公民教室</h5>
+          <p style="color: #fff;">
+            為中文母語人士設計的網路公民教室。教學內容包括美國入籍測驗、申請表格填寫、初級英文語法等。希望對您有所幫助，也歡迎加入我們的社群。
+          </p>
+          <div>
+            <a style="width: 40px; height: 40px;" class="btn btn-outline-light btn-floating m-1"
+              href="https://www.facebook.com/raysclassroom"><i class="fa fa-facebook"></i></a>
+            <a style="width: 40px; height: 40px;" class="btn btn-outline-light btn-floating m-1"
+              href="https://www.instagram.com/raysclassroom/"><i class="fa fa-instagram"></i></a>
+            <a style="width: 40px; height: 40px;" class="btn btn-outline-light btn-floating m-1"
+              href="https://www.youtube.com/channel/UCn-iEBTpZD-m3q-nUk2Y-Wg"><i class="fa fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">教學影片</h5>
+          <ul class="list-unstyled mb-0">
+            <li class="mb-2">
+              <a href="#mySlides1" class="text-white">公民入籍100題 (講解)</a>
+            </li>
+            <li class="mb-2">
+              <a href="#mySlides2" class="text-white">公民入籍100題 (測驗)</a>
+            </li>
+            <li class="mb-2">
+              <a href="#mySlides3" class="text-white">初級英文語法</a>
+            </li>
+            <li class="mb-2">
+              <a href="#mySlides4" class="text-white">初級英文聽力</a>
+            </li>
+            <li class="mb-2">
+              <a href="#mySlides5" class="text-white">N400申請表格</a>
+            </li>
+            <li class="mb-2">
+              <a href="#mySlides6" class="text-white">N400關鍵單字</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">講義下載</h5>
+          <ul class="list-unstyled mb-0">
+            <li class="mb-2">
+              <a href="#handouts" class="text-white">初級英文語法</a>
+            </li>
+            <li class="mb-2">
+              <a href="#handouts" class="text-white">N400關鍵單字</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="copyright text-center p-3">
+      RAY的公民教室 © 2017-2021
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <script src="./script.js"></script>
+</body>
+
+</html>
