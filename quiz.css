@@ -1,0 +1,102 @@
+root {
+  background: #fff;
+}
+
+html * {
+  padding: 0;
+  margin: 0;
+  transition: 0.2s;
+}
+
+.question-container {
+  display: flex;
+  flex-direction: row;
+}
+
+#speak-btn {
+  margin-right: 10px;
+}
+
+#speak-btn:hover {
+  cursor: pointer;
+}
+
+#question-status, #questions-correct {
+  font-weight: 700;
+}
+
+.outer-container {
+  max-width: 700px;
+  background: #d3e2f2;
+  box-shadow: 10px 10px 20px #999;
+  border-radius: 10px;
+  padding: 40px;
+}
+
+.title-container, .button-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.title-container {
+  justify-content: space-between;
+}
+
+.button-container {
+  justify-content: space-around;
+}
+
+.btn-group button:not(:last-child) {
+  border-right: none;
+}
+
+button {
+  width: 100%;
+  border: 1px solid #276bfb;
+  padding: 15px 32px;
+  background-color: #f6f4f3;
+  font-weight: 600;
+}
+
+#record-btn, .left-edges-rounded {
+  border-radius: 5px 0 0 5px;
+}
+
+#submit-btn {
+  border-radius: 0 5px 5px 0;
+}
+
+#reset-btn {
+  border-radius: 5px;
+}
+
+#answer-box {
+  border-color: #276fbf;
+  background-color: #f6f4f3;
+}
+
+button:hover {
+  background-color: #276fbf;
+  color: #f6f4f3;
+  cursor: pointer;
+}
+
+button:focus {
+  outline: none;
+}
+
+button:active {
+  background-color: #183059;
+}
+
+@media only screen and (max-width: 600px) {
+  html {
+    background: #d3e2f2;
+  }
+
+  .outer-container {
+    margin: 0;
+    box-shadow: none;
+    border-radius: 0;
+  }
+}
