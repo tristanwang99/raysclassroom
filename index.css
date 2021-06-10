@@ -1,0 +1,550 @@
+:root {
+  --darkblue: #183059;
+  --blue: #276fbf;
+  --red: #f03a47;
+  --green: #49d396;
+  --lightblue: #d3e2f2;
+  --lightred: #fcd7da;
+  --lightgreen: #daf6ea;
+  --offwhite: #f6f4f3;
+  --lightgrayish: #e1dcda;
+  --grayish: #b5a9a4;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: var(--offwhite);
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+p {
+  font-size: 1rem;
+}
+
+.subtitle {
+  font-weight: normal;
+  font-size: 1.2rem;
+}
+
+.intro-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#rc-logo {
+  width: 10rem;
+}
+
+.col-sm-12 {
+  padding: 0;
+}
+
+.bt {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--darkblue);
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  margin: 7.5px;
+  height: 125px;
+  box-shadow: 10px 10px 5px var(--lightgrayish);
+  transition: 0.3s;
+}
+
+.bt p {
+  margin: 0;
+  background-color: black;
+  border-radius: 10px;
+  padding: 2px 10px;
+}
+
+.bt:hover {
+  cursor: pointer;
+  color: var(--offwhite);
+}
+
+.nv-btn h4 {
+  margin: 0;
+}
+
+.pl-btn h4, .ho-btn h4 {
+  margin-bottom: 20px;
+}
+
+/* Colored Buttons Start */
+
+.bl {
+  background-color: var(--lightblue);
+}
+
+.rd {
+  background-color: var(--lightred);
+}
+
+.gr {
+  background-color: var(--lightgreen);
+}
+
+.bl p, .rd p, .gr p {
+  transition: 0.3s;
+}
+
+.bl p {
+  color: var(--lightblue);
+}
+
+.rd p {
+  color: var(--lightred);
+}
+
+.gr p {
+  color: var(--lightgreen);
+}
+
+.bl:hover {
+  background-color: var(--blue);
+}
+
+.rd:hover {
+  background-color: var(--red);
+}
+
+.gr:hover {
+  background-color: var(--green);
+}
+
+.bt:hover p {
+  background-color: var(--offwhite);
+}
+
+.bl:hover p {
+  color: var(--blue);
+}
+
+.rd:hover p {
+  color: var(--red);
+}
+
+.gr:hover p {
+  color: var(--green);
+}
+
+/* Colored Buttons End */
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: 7.5px;
+}
+
+.slideshow-container img {
+  border-radius: 10px;
+  border: 1px solid var(--darkblue);
+  box-shadow: 10px 10px 5px var(--lightgrayish);
+}
+
+.slideshow-container:hover {
+  cursor: pointer;
+}
+
+.mySlides {
+  display: none;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: var(--offwhite);
+  font-weight: bold;
+  font-size: 18px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  transition: 0.3s;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: black;
+}
+
+.text {
+  color: var(--offwhite);
+  font-size: 1.2rem;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.numbertext {
+  color: var(--offwhite);
+  font-size: 1rem;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  -webkit-animation-fill-mode: forwards; 
+  animation-name: fade;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards; 
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* Navbar Start */
+
+header {
+  background: var(--darkblue);
+  text-align: center;
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+}
+
+.nav-toggle {
+  display: none;
+}
+
+.nav-toggle-label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-left: 1em;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.nav-toggle-label span,
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+  display: block;
+  background: var(--offwhite);
+  height: 3px;
+  width: 2em;
+  border-radius: 2px;
+  position: relative;
+}
+
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+  content: '';
+  position: absolute;
+}
+
+.nav-toggle-label span::before {
+  bottom: 10px;
+}
+
+.nav-toggle-label span::after {
+  top: 10px;
+}
+
+nav {
+  position: absolute;
+  text-align: left;
+  top: 100%;
+  left: 0;
+  background: var(--darkblue);
+  width: 100%;
+  transform: scale(1, 0);
+  transform-origin: top;
+  transition: transform 400ms ease-in-out;
+}
+
+nav ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+nav li {
+  margin-bottom: 1em;
+  margin-left: 1em;
+}
+
+nav a {
+  color: var(--offwhite);
+  text-decoration: none;
+  font-size: 1.2rem;
+  opacity: 0;
+  transition: opacity 150ms ease-in-out;
+}
+
+nav a:hover {
+  color: var(--offwhite);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav-toggle:checked ~ nav {
+  transform: scale(1, 1);
+}
+
+.nav-toggle:checked ~ nav a {
+  opacity: 1;
+  transition: opacity 250ms ease-in-out 250ms;
+}
+
+/* Navbar End */
+
+/* Footer Start */
+
+footer {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-flow: row wrap;
+  padding: 50px;
+  color: var(--offwhite);
+  background-color: var(--darkblue);
+}
+
+.footer > * {
+  flex: 1 100%;
+}
+
+.footer-left {
+  margin-right: 1.25em;
+  margin-bottom: 2em;
+}
+
+.footer ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.footer li {
+  line-height: 2em;
+}
+
+.footer a {
+  text-decoration: none;
+}
+
+.footer a:hover {
+  font-weight: bold;
+}
+
+.footer-right {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.footer-right > * {
+  flex: 1 50%;
+  margin-right: 1.25em;
+}
+
+.box a {
+  color: var(--grayish);
+}
+
+.footer-bottom {
+  text-align: center;
+  color: var(--grayish);
+  padding-top: 50px;
+}
+
+.footer-left p {
+  padding-right: 0;
+  color: var(--grayish);
+}
+
+.socials {
+  display: flex;
+  flex-direction: row;
+}
+
+.socials a {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  border: 1px solid var(--grayish);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.socials a:not(:last-child) {
+  margin-right: 15px;
+}
+
+.socials a i {
+  color: var(--grayish);
+  padding: 10px 12px;
+  font-size: 20px;
+}
+
+.socials a:hover {
+  background-color: var(--grayish);
+}
+
+.socials a:hover i {
+  color: var(--darkblue);
+}
+
+.footer-videos {
+  margin-bottom: 32px;
+}
+
+/* Footer End */
+
+@media only screen and (max-width: 800px) {
+  .footer-left p {
+    text-align: center;
+  }
+
+  .footer-right {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer-left, .footer-handouts, .footer-videos, .footer-handouts li, .footer-videos li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-left, .footer-videos, .footer-handouts {
+    margin-right: 0;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .nav-toggle-label {
+    display: none;
+  }
+
+  header {
+    display: grid;
+    grid-template-columns: 0.5fr auto minmax(600px, 4fr) 0.5fr;
+  }
+
+  .logo {
+    grid-column: 2 / 3;
+  }
+
+  nav {
+    all: unset;
+    grid-column: 3 / 4;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: flex-end;
+    /* border: 1px solid red; */
+  }
+
+  nav li {
+    margin-left: 3em;
+    margin-bottom: 0;
+  }
+
+  nav a {
+    opacity: 1;
+    position: relative;
+  }
+
+  nav a::before {
+    content: '';
+    display: block;
+    height: 3px;
+    border-radius: 2px;
+    background: var(--offwhite);
+    position: absolute;
+    top: -0.5em;
+    left: 0;
+    right: 0;
+    transform: scale(0, 1);
+    transition: transform ease-in-out 250ms;
+  }
+
+  nav a:hover::before {
+    transform: scale(1, 1);
+  }
+
+  .bt {
+    margin: 15px;
+    height: 150px;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  .slideshow-container {
+    margin: 15px;
+  }
+
+  #rc-logo {
+    width: 12rem;
+  }
+
+  /* Footer Start */
+
+  .footer-right > * {
+    flex: 1;
+  }
+
+  .footer-left {
+    flex: 1 0px;
+  }
+
+  .footer-left p {
+    padding-right: 20%;
+  }
+
+  .footer-right {
+    flex: 1 0px;
+  }
+
+  .footer-videos {
+    margin-bottom: 0;
+  }
+
+  /* Footer End */
+}
