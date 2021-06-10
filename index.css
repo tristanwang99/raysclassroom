@@ -430,7 +430,7 @@ footer {
 
 /* Footer End */
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1000px) {
   .footer-left p {
     text-align: center;
   }
@@ -451,7 +451,7 @@ footer {
   }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1000px) {
   .nav-toggle-label {
     display: none;
   }
